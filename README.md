@@ -7,6 +7,7 @@
 ```python
 DataCleaning(dataframe)
 ```
+El parámeto de entrada del método es un dataframe. Como salida nos devolverá un nuevo dataframe.
 
 2) Creación automática de ratio y selección de los mejores ratios utilizando Principal Component Analysis y árbol de decisión.
 Mediante combinaciones de variables X y Y de la siguiente forma:
@@ -21,6 +22,7 @@ Mediante combinaciones de variables X y Y de la siguiente forma:
 Ratios_PCA_DT(dataframe, 'nombre_col_target')
 
 ```
+Los parámetros de entrada del método son un dataframe y el nombre de la columna target. Como salida nos devolverá un nuevo dataframe con los ratios generados y seleccionados.
 
 3) Utilizar Algoritmo Genético para estimar los parámetros de la regresión en una Regresión Logística
 
@@ -28,8 +30,9 @@ Ratios_PCA_DT(dataframe, 'nombre_col_target')
 GeneticLogisticRegression(dataframe, 'nombre_col_target')
 
 ```
+Los parámetros de entrada del método son un dataframe y el nombre de la columna target. Como salida nos devolverá una lista con los parámetros de la regresión logística.
 
-### Install
+### Instalación
 
 For Python 2.x and Python 3.x respectively:
 
