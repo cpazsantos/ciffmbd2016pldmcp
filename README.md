@@ -34,7 +34,7 @@ Los parámetros de entrada del método son un dataframe y el nombre de la column
 
 ### Instalación
 
-For Python 2.x and Python 3.x respectively:
+Para Python 2.x y Python 3.x respectivamente:
 
 ```python
 pip install idmbd
