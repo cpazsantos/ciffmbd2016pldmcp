@@ -17,10 +17,13 @@ def DataCleaning(df):
     df=df.replace([np.inf, -np.inf], 0)
 
     #Transformamos los Missing values en NaN y reemplazamos todos los NaN por la media de los datos de la columna en la que se encuentra.
-    df = df.fillna(0)
+    df = df.apply(lambda x: x.fillna(x.mean()),axis=0)
 
-    print type(df)
-    return df
+    #Eliminamos los outliers.
+    df2 = df[np.abs(df-df.mean())<=(3*df.std())]
+
+    return df2
+
     
 def Ratios_PCA_DT(df_inicial, output_var):
     
