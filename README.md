@@ -4,6 +4,10 @@
 
 1) Limpieza automatizada de datos; identificar los valores y / o filas no válidas y resolver automáticamente el problema, sea él NaN, falta de datos, valores atípicos, valores poco fiables, fuera del rango. Tu grupo debe pensar que solución quiere dar a cada situación e implementarla.
 
+```python
+DataCleaning(dataframe)
+```
+
 2) Creación automática de ratio y selección de los mejores ratios utilizando Principal Component Analysis y árbol de decisión.
 Mediante combinaciones de variables X y Y de la siguiente forma:
 - (X-Y)/Y 
@@ -13,8 +17,17 @@ Mediante combinaciones de variables X y Y de la siguiente forma:
 - X-Y 
 - X^2
 
+```python
+Ratios_PCA_DT(dataframe, 'nombre_col_target')
+
+```
+
 3) Utilizar Algoritmo Genético para estimar los parámetros de la regresión en una Regresión Logística
 
+```python
+GeneticLogisticRegression(dataframe, 'nombre_col_target')
+
+```
 
 ### Install
 
